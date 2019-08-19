@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_20sdp"
+    tools:context=".TambahData">
+
+    <!--<TextView-->
+        <!--android:layout_gravity="center"-->
+        <!--android:textSize="@dimen/_30sdp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#000000"-->
+        <!--android:text="Tambah Data"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="@dimen/_50sdp"/>-->
+
+    <ImageView
+        android:layout_gravity="center"
+        android:background="@drawable/ic_tambah"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp" />
+
+    <EditText
+        android:id="@+id/tambah_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:hint="Nama Customer"
+            android:id="@+id/tambah_nama_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:hint="Jenis Pakaian"
+            android:id="@+id/tambah_jenis_pakaian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:hint="Berat"
+            android:id="@+id/tambah_berat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:hint="Total Harga"
+            android:id="@+id/tambah_total_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:hint="Nama Kasir"
+            android:id="@+id/tambah_nama_kasir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_tambah_tgl_simpan"
+            android:background="@drawable/ic_tgl_simpan"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp" />
+
+        <TextView
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/bt_tambah_tgl_simpan"
+            android:id="@+id/tv_tambah_tgl_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_tambah_tgl_update"
+            android:background="@drawable/ic_tgl_update"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp" />
+
+        <TextView
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/bt_tambah_tgl_update"
+            android:id="@+id/tv_tambah_tgl_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:textColor="#ffffff"
+        android:background="#2194F0"
+        android:layout_gravity="center"
+        android:id="@+id/buttonTambah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data"/>
+
+
+
+
+
+</LinearLayout>
